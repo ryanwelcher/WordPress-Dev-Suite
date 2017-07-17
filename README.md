@@ -1,16 +1,16 @@
-#WP Local
+# WP Local
 
 A plugin that adds simple helper methods and WP_CLI commands when developing for WordPress
 
 
-##Methods
+## Methods
 
 Just one for now.
 
 * rw_dump_array( $thing ) -  wraps print_r( $thing ) in pre tags for a prettier output
 
 
-##WP_CLI
+## WP_CLI
 
 
 Currently there are three commands:
