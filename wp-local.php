@@ -1,12 +1,11 @@
 <?php
 
 /**
- * Plugin Name: Dev Suite
- * Description: A suite of tools for developers when creating themes or plugins for WordPress. Not for Production use. Drop into your mu-plugins folder.
+ * Plugin Name: WP Local
+ * Description: A suite of tools for working with WordPress locally. Not for Production use. Drop into your mu-plugins folder.
  * Author: Ryan Welcher
  * Version: 1.0.0
  * Author URI: http://www.ryanwelcher.com
- * Text Domain: rw_dev
  */
 
 /**
@@ -61,6 +60,6 @@ function rw_check_for_fatal_errors() {
  * Require the WP_CLI classes
  */
 if ( defined('WP_CLI') && WP_CLI ) {
-
-	include dirname( __FILE__ ). '/rw-dev-suite/_inc/wp-cli.php';
+	require_once 'rw-dev-suite/commands/class-wpcli-local-users.php';
+	require_once 'rw-dev-suite/commands/class-wpcli-local-sites.php';
 }
