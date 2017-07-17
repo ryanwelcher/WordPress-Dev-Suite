@@ -13,7 +13,7 @@ Just one for now.
 ## WP_CLI
 
 * wp rwdev functions - scans for the helper methods and comments them out
-* wp local-users create-me - creates a new user locally.
+* wp local-users create-me:Creates a new user locally. Uses `admin`/`password` as the default username/password and will prompt if in multisite to make user and super-admin and assign to all sites.
     *     wp local-users create-me
     *     wp local-users create-me ryan
     *     wp local-users create-me ryan --pass=1234
