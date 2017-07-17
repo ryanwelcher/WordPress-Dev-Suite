@@ -32,26 +32,6 @@ class LocalSites extends WP_CLI_COMMAND {
 		$sites = get_sites( ['fields' => 'ids' ] );
 		
 		WP_CLI::runcommand( 'site option list --site_id=1' );
-		
-		//wp search-replace www.northeastern.edu ne-cos.dev --network --dry-run
-		
-		
-	}
-	
-	function api_test() {
-		
-
-		
-		$url = 'http://ne-cos.dev/wp-json/wp/v2/faculty/22387?context=edit';
-		$headers = array(
-			'headers'=> [ 'Authorization' => 'Basic ' . base64_encode( 'ryan:password' ) ]
-		);
-		$request = wp_remote_get( $url, $headers );
-		
-		$data = json_decode( wp_remote_retrieve_body( $request ) );
-		
-		var_dump( $data->content );
-		
 	}
 }
 
