@@ -77,7 +77,7 @@ class LocalUsers extends WP_CLI_Command {
 	 *
 	 * ## EXAMPLES
 	 *
-	 *     wp local-users add-to-sites
+	 *     wp local-users add-to-sites ryan
 	 *
 	 * @subcommand add-to-sites
 	 *

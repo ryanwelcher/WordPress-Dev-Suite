@@ -12,13 +12,16 @@ Just one for now.
 
 ## WP_CLI
 
+* wp rwdev functions - scans for the helper methods and comments them out
+* wp local-users create-me - creates a new user locally.
+    *     wp local-users create-me
+    *     wp local-users create-me ryan
+    *     wp local-users create-me ryan --pass=1234
+    *     wp local-users add ryan --pass=1234 
+* wp local-users add-to-sites - Add a user to all sites in the network as admin. Accepts username as param.
+    *     wp local-users add-to-sites ryan
 
-Currently there are three commands:
 
 ### These have been deprecated - use Grunt instead ###
 * wp rwdev js - scans files for console.log() and comments them out
-
 * wp rwdev tags - scans files for shorthand php tags and replaces them with proper ones
-
-* wp rwdev functions - scans for the helper methods and comments them out
-
